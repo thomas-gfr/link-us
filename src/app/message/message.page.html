@@ -1,0 +1,5 @@
+<ion-content>
+    <ng-container *ngFor="let item of messages">
+        <app-message-card [item]="item" (click)="openConversation(item.id)" ></app-message-card>
+    </ng-container>
+</ion-content>
